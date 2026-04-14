@@ -1,81 +1,60 @@
-# College Connect - Digital Student Welfare Portal
+# NextStep@IET Project
 
-## 🚀 Quick Start
+This repository contains a full-stack college support platform built with a Node.js backend and a React/Vite frontend.
 
-### Prerequisites
-- Node.js (v16+)
-- MongoDB
-- npm or yarn
+## Project Structure
 
-### Installation
+- `backend/` - Express server, MongoDB models, authentication, document uploads, placements, and user management.
+- `frontend/` - React application using Vite, Tailwind CSS, and pages for students, teachers, admins, and placement features.
 
-1. **Backend Setup:**
+## Prerequisites
+
+- Node.js 18+
+- npm
+- MongoDB instance or MongoDB URL
+
+## Backend Setup
+
+1. Open a terminal and navigate to `backend/`:
    ```bash
    cd backend
    npm install
-   npm run dev
+   ```
+2. Create a `.env` file and set your values:
+   ```env
+   PORT=5000
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   ```
+3. Start the backend server:
+   ```bash
+   npm start
    ```
 
-2. **Frontend Setup:**
+## Frontend Setup
+
+1. Open a terminal and navigate to `frontend/`:
    ```bash
    cd frontend
    npm install
+   ```
+2. Start the frontend development server:
+   ```bash
    npm run dev
    ```
+3. Open the local URL shown in the terminal.
 
-##  Features
+## Notes
 
-- **Student Dashboard:** Grievances, Scholarships, Announcements
-- **Admin Dashboard:** Manage grievances, scholarships, announcements
-- **Teacher Dashboard:** Attendance management, student oversight
-- **File Upload:** Document vault for scholarship applications
-- **Real-time Updates:** Live grievance status tracking
+- Ensure the backend server is running before using the frontend.
+- The frontend API base URL may be configured in `frontend/src/api/api.js`.
+- Uploaded files are stored in the backend `uploads/` folder.
 
-## 🛠️ Tech Stack
+## Helpful Commands
 
-- **Frontend:** React, Tailwind CSS, Vite
-- **Backend:** Node.js, Express, MongoDB
-- **Authentication:** JWT-based sessions
-- **File Storage:** Local file system with static serving
+- `cd backend && npm install && npm start`
+- `cd frontend && npm install && npm run dev`
 
-## 📁 Project Structure
+## Contact
 
-```
-college-connect/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── uploads/          # File storage
-│   ├── server.js
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── api/
-│   └── vite.config.js
-└── README.md
-```
-
-## 🔧 Development Commands
-
-```bash
-# Backend
-npm run dev      # Start with nodemon
-npm start        # Production start
-
-# Frontend
-npm run dev      # Development server
-npm run build    # Production build
-```
-
-## 🌐 Access URLs
-
-- **Frontend:** http://localhost:5173
-- **Backend API:** http://localhost:7000
-- **File Uploads:** http://localhost:7000/uploads/
-
----
-
-**Institution:** Institute of Engineering and Technology, Lucknow
-**Module:** Digital Student Welfare (DSW)
+For questions or help, add additional project-specific instructions here.

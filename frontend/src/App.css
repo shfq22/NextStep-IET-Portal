@@ -1,0 +1,67 @@
+/* Logo Showcase Wrapper */
+.cc-logo-showcase {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glow Effect (Outer Glow Ring) */
+.cc-logo-glow-ring {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 216, 3, 0.6) 0%,
+    rgba(255, 216, 3, 0.35) 40%,
+    rgba(255, 216, 3, 0.1) 65%,
+    transparent 80%
+  );
+
+  filter: blur(12px);
+  z-index: 0;
+
+  animation: glowPulse 2.5s ease-in-out infinite alternate;
+}
+
+/* Inner Logo Container */
+.cc-logo-inner {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  padding: 12px;
+  background: var(--bg-color);
+
+  box-shadow: 0 0 20px rgba(255, 216, 3, 0.7);
+}
+
+/* Optional Border Ring */
+.cc-logo-ring-border {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 216, 3, 0.4);
+  z-index: 1;
+}
+
+/* Animation */
+@keyframes glowPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* Hover Effect (Optional but 🔥) */
+.cc-logo-showcase:hover .cc-logo-glow-ring {
+  filter: blur(16px);
+  transform: scale(1.2);
+}

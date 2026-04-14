@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your index.css */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* This ensures the background color fills the WHOLE screen */
+  background-color: var(--bg-color); 
+  color: var(--paragraph);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure the Login container uses the variable */
+.login-container {
+  background-color: var(--bg-color);
+}
+
+
+:root {
+  /* Your Specific Light Mode Scheme */
+  --bg-color: #fffffe;
+  --headline: #272343;
+  --paragraph: #2d334a;
+  --btn-bg: #ffd803;
+  --btn-text: #272343;
+  --secondary: #e3f6f5;
+  --tertiary: #bae8e8;
+  --sidebar-bg: #fffffe;
+}
+
+[data-theme='dark'] {
+  /* Cool Dark Mode Variant */
+  --bg-color: #16161a;
+  --headline: #fffffe;
+  --paragraph: #94a1b2;
+  --btn-bg: #ffd803; /* Keep the highlight yellow for "cool" factor */
+  --btn-text: #272343;
+  --secondary: #242629;
+  --tertiary: #72757e;
+  --sidebar-bg: #16161a;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--paragraph);
+  transition: all 0.3s ease;
+}
+
+/* Shared polish for internal dashboard screens (home page unaffected). */
+.dashboard-shell .dashboard-content {
+  animation: fadeInUp 0.25s ease-out;
+}
+
+.dashboard-shell .dashboard-content h1,
+.dashboard-shell .dashboard-content h2,
+.dashboard-shell .dashboard-content h3 {
+  color: var(--headline);
+  letter-spacing: -0.01em;
+}
+
+.dashboard-shell .dashboard-content p,
+.dashboard-shell .dashboard-content label,
+.dashboard-shell .dashboard-content span {
+  color: var(--paragraph);
+}
+
+.dashboard-shell .dashboard-content input,
+.dashboard-shell .dashboard-content select,
+.dashboard-shell .dashboard-content textarea {
+  border-radius: 0.65rem;
+  border-color: var(--tertiary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.dashboard-shell .dashboard-content input:focus,
+.dashboard-shell .dashboard-content select:focus,
+.dashboard-shell .dashboard-content textarea:focus {
+  outline: none;
+  border-color: var(--btn-bg);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--btn-bg) 30%, transparent);
+}
+
+.dashboard-shell .dashboard-content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  border: 1px solid var(--tertiary);
+}
+
+.dashboard-shell .dashboard-content thead {
+  background: color-mix(in srgb, var(--secondary) 75%, var(--bg-color));
+}
+
+.dashboard-shell .dashboard-content th,
+.dashboard-shell .dashboard-content td {
+  padding: 0.75rem 0.9rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
