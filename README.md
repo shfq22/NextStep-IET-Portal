@@ -74,12 +74,6 @@ Post announcements
    ```
 3. Open the local URL shown in the terminal.
 
-## Notes
-
-- Ensure the backend server is running before using the frontend.
-- The frontend API base URL may be configured in `frontend/src/api/api.js`.
-- Uploaded files are stored in the backend `uploads/` folder.
-
 ## Helpful Commands
 
 - `cd backend && npm install && npm start`
