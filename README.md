@@ -6,13 +6,11 @@ It replaces manual workflows (calls, WhatsApp, physical verification) with a cen
 ## Problem Statement
 
 In my college, scholarship processes like:
-
 Document submission
 Verification
 Query handling
 
 were done manually, leading to:
-
 Communication delays
 Lack of transparency
 High workload on volunteers
@@ -23,16 +21,16 @@ High workload on volunteers
 - `frontend/` - React application using Vite, Tailwind CSS, and pages for students, teachers, admins, and placement features.
 
 ## 👥 User Roles
-👨‍🎓 `Student/`
+👨‍🎓 `Student`
 Upload documents
 Track application status
 Raise support tickets
 View attendance
 
-🧑‍🏫 `Faculty/`
+🧑‍🏫 `Faculty`
 Mark student attendance
 
-🛠️ `Admin (DSW)/`
+🛠️ `Admin (DSW)`
 Verify documents
 Manage tickets
 Post announcements
