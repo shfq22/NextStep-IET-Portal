@@ -79,6 +79,4 @@ Post announcements
 - `cd backend && npm install && npm start`
 - `cd frontend && npm install && npm run dev`
 
-## Contact
 
-For questions or help, add additional project-specific instructions here.
