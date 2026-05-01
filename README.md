@@ -6,11 +6,13 @@ It replaces manual workflows (calls, WhatsApp, physical verification) with a cen
 ## Problem Statement
 
 In my college, scholarship processes like:
+
 Document submission
 Verification
 Query handling
 
 were done manually, leading to:
+
 Communication delays
 Lack of transparency
 High workload on volunteers
