@@ -7,14 +7,14 @@ It replaces manual workflows (calls, WhatsApp, physical verification) with a cen
 
 In my college, scholarship processes like:
 
-Document submission
-Verification
+Document submission,
+Verification,
 Query handling
 
 were done manually, leading to:
 
-Communication delays
-Lack of transparency
+Communication delays,
+Lack of transparency,
 High workload on volunteers
 
 ## Project Structure
