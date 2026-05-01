@@ -1,11 +1,41 @@
 # NextStep@IET Project
 
-This repository contains a full-stack college support platform built with a Node.js backend and a React/Vite frontend.
+NextStep@IET is a full-stack, role-based web application built to digitize and streamline the scholarship and student support process in college.
+It replaces manual workflows (calls, WhatsApp, physical verification) with a centralized and efficient system for students, faculty, and DSW admins.
+
+## Problem Statement
+
+In my college, scholarship processes like:
+
+Document submission
+Verification
+Query handling
+
+were done manually, leading to:
+
+Communication delays
+Lack of transparency
+High workload on volunteers
 
 ## Project Structure
 
 - `backend/` - Express server, MongoDB models, authentication, document uploads, placements, and user management.
 - `frontend/` - React application using Vite, Tailwind CSS, and pages for students, teachers, admins, and placement features.
+
+## 👥 User Roles
+👨‍🎓 `Student/`
+Upload documents
+Track application status
+Raise support tickets
+View attendance
+
+🧑‍🏫 `Faculty/`
+Mark student attendance
+
+🛠️ `Admin (DSW)/`
+Verify documents
+Manage tickets
+Post announcements
 
 ## Prerequisites
 
